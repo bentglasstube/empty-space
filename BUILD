@@ -11,7 +11,7 @@ config_setting(
 )
 
 cc_binary(
-    name = "ld41",
+    name = "empty-space",
     data = ["//content"],
     linkopts = select({
         ":windows": ["-mwindows", "-lSDL2main" ],
@@ -31,18 +31,18 @@ cc_binary(
 )
 
 pkg_winzip(
-    name = "ld41-windows",
+    name = "empty-space-windows",
     files = [
-        ":ld41",
+        ":empty-space",
         "//content",
     ]
 )
 
 pkg_tar(
-    name = "ld41-linux",
+    name = "empty-space-linux",
     extension = "tar.gz",
     srcs = [
-        ":ld41",
+        ":empty-space",
         "//content",
     ],
 )
