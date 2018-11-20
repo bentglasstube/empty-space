@@ -41,6 +41,8 @@ pkg_winzip(
 pkg_tar(
     name = "empty-space-linux",
     extension = "tar.gz",
+    strip_prefix = "/",
+    package_dir = "empty-space/",
     srcs = [
         ":empty-space",
         "//content",

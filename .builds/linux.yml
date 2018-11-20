@@ -10,7 +10,7 @@ sources:
   - https://git.sr.ht/~bentglasstube/empty-space
 environment:
   target: 'empty-space-linux'
-  deploy: 'alan@samwise.eatabrick.org:/srv/http/share.eatabrick.org/files/empty-space'
+  deploy: 'build@build.eatabrick.org:empty-space'
 secrets:
   - 7a7c0309-95bb-4107-9e42-96352295d661
 tasks:
