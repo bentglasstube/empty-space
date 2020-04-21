@@ -1,0 +1,9 @@
+[Desktop Entry]
+
+Type=Application
+Version=1.0
+Name=Empty Space
+Terminal=false
+Icon=icon
+Exec=empty-space
+Categories=Game;

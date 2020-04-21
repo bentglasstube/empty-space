@@ -1,4 +1,12 @@
 bazel-*
-ld41-*.zip
-ld41-*.tgz
-*.app
+/*.zip
+/*.tgz
+/*.app
+/*.AppImage
+/*.AppDir
+/*.data
+/*.html
+/*.js
+/*.wasm
+/*-web-*/
+*output/
