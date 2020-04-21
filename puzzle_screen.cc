@@ -22,7 +22,7 @@ PuzzleScreen::PuzzleScreen() :
 
 bool PuzzleScreen::update(const Input& input, Audio& audio, unsigned int elapsed) {
   if (state_ == GameState::Playing) {
-    if (!audio.music_playing()) audio.play_music("spaceloop.ogg");
+    audio.play_music("spaceloop.ogg", true);
 
     timer_ += elapsed;
     enemy_timer_ -= elapsed;
