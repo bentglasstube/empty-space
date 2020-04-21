@@ -14,6 +14,7 @@ class Enemy : public Object {
     enum class Type { Invader, Shroom, Crab, Jelly, Elephant, GhostCrab, Eyeball, Fireball };
 
     Enemy(double x, double y, Type type, const Object& target);
+    virtual ~Enemy() {}
 
     bool fire();
 

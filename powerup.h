@@ -11,6 +11,7 @@ class Powerup : public Object {
     enum class Type { Up, Right, Down, Left, K, N, O, B };
 
     Powerup(double x, double y);
+    virtual ~Powerup() {}
 
     void update(unsigned int elapased) override;
     void draw(Graphics& graphics) const override;

@@ -9,6 +9,7 @@ class Explosion : public Object {
   public:
 
     Explosion(double x, double y);
+    virtual ~Explosion() {}
 
     void update(unsigned int elapsed);
     void draw(Graphics& graphics) const;
